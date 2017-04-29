@@ -32,11 +32,11 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Due to multi-density builds, these are set by init
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model ro.sf.lcd_density
-
+#PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model ro.sf.lcd_density
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
@@ -60,7 +60,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8916 \
     libmm-qcamera
 
 # Charger
@@ -91,8 +90,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Lights
-PRODUCT_PACKAGES += \
-    lights.msm8916
+#PRODUCT_PACKAGES += \
+#    lights.msm8916
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -116,8 +115,8 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 # Sensors
 PRODUCT_PACKAGES += \
     libjni_proximityCalibrate \
-    ProximityCalibrate \
-    sensors.msm8916
+    ProximityCalibrate
+#    sensors.msm8916
 
 # Thermal
 PRODUCT_COPY_FILES += \

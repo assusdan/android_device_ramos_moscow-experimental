@@ -16,7 +16,7 @@
 -include device/cyanogen/msm8939-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/yu/tomato
-
+TARGET_OTA_ASSERT_DEVICE := kipper,tod,ferrari,moscow
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Assertions
