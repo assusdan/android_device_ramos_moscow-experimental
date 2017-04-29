@@ -1,9 +1,21 @@
 # Radio
 persist.data.target=dpm1
-persist.radio.multisim.config=dsds
 ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999
 ro.com.android.mobiledata=false
 ro.config.always_show_roaming=true
-ro.telephony.default_network=9,1
+ro.telephony.default_network=20
 qemu.hw.mainkeys=0
 ro.sf.lcd_density=480
+persist.radio.rat_on=combine
+persist.radio.primarycard=true
+persist.radio.custom_ecc=1
+persist.radio.multisim.config=ssss
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=22
+keyguard.no_require_sim=true
+ro.com.android.dataroaming=true
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+persist.factory.receiver_volume=10
+persist.factory.loopback_volume=12
+persist.audio.fluence.speaker=true
